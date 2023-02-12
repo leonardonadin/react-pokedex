@@ -22,7 +22,7 @@ function App() {
 				<p className="text-xl text-center mb-5">
 					This is a simple Pokédex made with React and TypeScript.
 				</p>
-				<div className="grid gap-4 grid-cols-4">
+				<div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
 					{pokemons.map((pokemon, index) => {
 						return <PokemonCard key={pokemon.name} name={pokemon.name} />;
 					})}
